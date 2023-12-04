@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =========================================== */
+
+@font-face {
+    font-family: 'Karmatic-Arcade';
+    src: url('./fonts/karmatic-arcade.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: '8-Bit-Limit';
+    src: url('./fonts/8bitlim.ttf') format('truetype')
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: '8-Bit-Limit';
+	background-color: #074f68;
+	color: white;
+    margin: 0;
+}
+
+h1
+{
+	font-family: 'Karmatic-Arcade';
+	font-size: 3.6em;
+}
+
+h2
+{
+	font-size: 1.4em;
+	text-align : center;
+	margin: 2em 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+hr {
+	height: 0;
+	border: 1px solid #555555;
+}
+
+#header {
+	padding: 0.9em;
+	padding-top: 5em;
+	text-align: center;
+}
+
+#header .container {
+	position: relative;
+}
+
+#header .logo {
+	transform: rotate(10deg);
+	max-width: 200px;
+	min-width: 200px;
+	position: absolute;
+	right: -8.6em;
+	top: -2em;
+	height: 200%;
+}
+
+#social {
+	margin-top: 16px;
+	margin-bottom: 20px;
+}
+
+.flex.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.block {
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+.block .column {
+	margin: 22px;
+	text-align : center;
+}
+
+.block p {
+	margin: 9px 0;
+}
+
+.emphasis {
+	font-size: 0.8em;
+	font-weight: bold;
+	font-family: '8-Bit-Limit';
+}
+
+.full-width {
+	width: 100%;
+	margin: 0;
+}
+
+.inlined
+{
+	display: inline-block;
+}
+
+.mask
+{
+	-webkit-mask-image: url(./pictures/layout/newsletter-box.png);
+	-webkit-mask-repeat: no-repeat;
+	mask-image: url(./pictures/layout/newsletter-box.png);
+	mask-repeat: no-repeat;
+}
+
+.mc-block
+{
+	color: white;
+	margin: auto;
+	width: 805px;
+	height: 165px;
+}
+
+#mc_embed_signup
+{
+	color: #074f68;
+	margin: auto;
+	padding: 30px;
+}
+
+.mc-field-group label
+{
+	margin-right: 3em;
+	font-family: '8-Bit-Limit';
+}
+
+#mc_embed_signup .email
+{
+	color: #115769;
+	border: 1px solid #074f68;
+	border-radius: 4px;
+	width: 270px;
+	height: 42px;
+	background-color: white;
+	padding: 0 12px;
+	font-family: '8-Bit-Limit';
+}
+
+.email::-webkit-input-placeholder
+{
+	opacity: 0.3;
+}
+
+.email:-ms-input-placeholder
+{
+	opacity: 0.3;
+}
+
+.email::placeholder
+{
+	opacity: 0.3;
+}
+
+#mc_embed_signup .button
+{
+	color: white;
+	border: 0px;
+	border-radius: 4px;
+	height: 42px;
+	width: 130px;
+	background-color: #00b295;
+	font-family: '8-Bit-Limit';
+	transition: background-color 0.4s;
+}
+
+#mc_embed_signup .button:hover
+{
+	cursor: pointer;
+	background-color: #86dfea;
+}
+
+#mc_embed_signup .optionalParent
+{
+	margin-top: 1em;
+}
+
+#discord-icon a
+{
+	-webkit-mask-image: url(./pictures/social/discord.png);
+	mask-image: url(./pictures/social/discord.png);
+}
+
+#facebook-icon a
+{
+	-webkit-mask-image: url(./pictures/social/facebook.png);
+	mask-image: url(./pictures/social/facebook.png);
+}
+
+#itchio-icon a
+{
+	-webkit-mask-image: url(./pictures/social/itchio.svg);
+	mask-image: url(./pictures/social/itchio.svg);
+}
+
+.social-icon a
+{
+	display: block;
+	width: 48px;
+	height: 48px;
+	background-color: white;
+	/*background-color: #115769;*/
+	-webkit-mask-size: 48px 48px;
+	mask-size: 48px 48px;
+	transition: background-color 0.4s;
+}
+
+.social-icon a:hover
+{
+	background-color: #00b295;
+}
+
+@media only screen and (max-width: 600px) {
+
+	#header img
+	{
+		width: 100%;
+	}
+
+	#header h1
+	{
+		font-size: 2.6em;
+	}
+
+	#header .logo
+	{
+		height: 140%;
+		right: -3.6em;
+		top: -4em;
+	}
+
+	.mc-block
+	{
+		width: 100%;
+	}
+
+	.inlined
+	{
+		display: block;
+	}
+
+	#mc-embed_signup
+	{
+		padding: auto 2em;
+	}
+
+	.mc-field-group *
+	{
+		margin: 1em 0;
+	}
+}
